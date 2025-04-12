@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0100e595e1cc1ff7f
+      KeyName: "Pavi ec2"
+      Tags:
+        - Key: Name
+          Value: CloudFormation-EC2
+
+    
